@@ -82,6 +82,10 @@ form{
     font-weight: bolder;
     border: none;
 }
+#divresult{
+    line-height: 4px;
+    color: white;
+}
 
 select{
 

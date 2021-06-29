@@ -32,10 +32,27 @@ function symptomCheck(){
         alert("Please choose option")
 
     }
-    else{
-        document.getElementById('result').textContent =sym1;
+    else if(sym1==="Yes" || sym2==="Yes" || sym3==="Yes" || sym4==="Yes" || sym5==="Yes" || sym6==="Yes" || sym7==="Yes" || sym8==="Yes"|| sym9==="Yes"|| sym10==="Yes"|| sym11==="Yes"|| sym12==="Yes"|| sym13==="Yes"){
+        document.getElementById('result').textContent = "You display some of the symptoms of covid 19.";
+        document.getElementById('result2').textContent = "Kindly visit the nearest hospital to get";
+        document.getElementById('result3').textContent = "Your Covid 19 test done";
+
+
 
     }
+    else if(sym1==="No" || sym2==="No" || sym3==="No" || sym4==="No" || sym5==="No" || sym6==="No" || sym7==="No" || sym8==="No"|| sym9==="No"|| sym10==="No"|| sym11==="No"|| sym12==="No"|| sym13==="No"){
+        document.getElementById('result').textContent = "You don not display any symptoms of covid 19.";
+        document.getElementById('result2').textContent = "However, you can still get tested";
+        document.getElementById('result3').textContent = "To know your status.";
+
+
+
+
+
+    }
+
+
+
 
 
 
