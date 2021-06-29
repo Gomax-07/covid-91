@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/checklist.css">
+    <title>Check symptoms</title>
+</head>
+<body>
+<h2>Check your covid 19 symptoms here</h2>
+
+<form class="checkform" onsubmit="symptomCheck(); return false;">
+
+    <label class="label1" >Fever 100.4°F/ 38°C or higher.
+    <select id="sym1">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+    </label><br>
+    <label class="label2" >Cough
+        <select id="sym2">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </label><br>
+    <label class="label3" >Shortness of breath or Difficulty Breathing.
+        <select id="sym3">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </label><br>
+    <label class="label4" >Chills.
+        <select id="sym4">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </label><br>
+    <label class="label5" >Fatigue.
+        <select id="sym5">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </label><br>
+    <label class="label6" >Muscle Pain or Body Aches.
+        <select id="sym6">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </label><br>
+    <label class="label7" >Headache.
+        <select id="sym7">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </label><br>
+    <label class="label8" >New Loss of Taste or Smell.
+        <select id="sym8">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </label><br>
+    <label class="label9" >Sore Throat.
+        <select id="sym9">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </label><br>
+    <label class="label10" >Congestion or Runny nose.
+        <select id="sym10">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </label><br>
+    <label class="label11" >Nausea or Vomiting.
+        <select id="sym11">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </label><br>
+    <label class="label12" >Diarrhoea.
+        <select id="sym12">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </label><br>
+    <label class="label13" >Other signs of new ilness that are unrelated to<br> a preexisting condition(such as seasonal allergies)
+        <select id="sym13">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </label><br>
+
+
+    <button type="submit">Proceed</button>
+
+
+</form>
+<p id="result"></p>
+
+<script src="js/checklist.js"></script>
+
+</body>
+</html>
