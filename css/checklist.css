@@ -102,7 +102,7 @@ body{
 
 /* Media Queries */
 
-@media (min-width: 900px) {
+@media (min-width: 720px) {
     .checklist{
         margin-left: 37%;
     }
@@ -115,15 +115,6 @@ body{
 }
 
 
-/*tablet screens*/
-@media (min-width: 720px) {
 
 
-
-
-}
-
-@media (min-width: 1200px) {
-
-}
 
