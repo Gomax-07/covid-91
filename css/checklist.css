@@ -78,6 +78,7 @@ form{
     margin-top: 30px;
     height: 40px;
     width: 130px;
+
     font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
     border: none;
@@ -98,3 +99,31 @@ body{
     font-family: 'Open Sans', sans-serif;
 
 }
+
+/* Media Queries */
+
+@media (min-width: 900px) {
+    .checklist{
+        margin-left: 37%;
+    }
+    #proceed{
+        width: 130px;
+    }
+
+
+
+}
+
+
+/*tablet screens*/
+@media (min-width: 720px) {
+
+
+
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
