@@ -49,7 +49,39 @@ function symptomCheck(){
 
 
 
+
     }
+
+
+}
+
+function showResults(){
+    let location=document.getElementById("location").value;
+    let name=document.getElementById("name").value;
+    let number=document.getElementById("number").value;
+    console.log(location)
+    console.log(name)
+    console.log(number)
+    if (location==="0"){
+        alert("Please choose hospital to continue")
+    }
+    else{
+        document.getElementById('results').textContent = name;
+        document.getElementById('results2').textContent = number;
+        document.getElementById('results3').textContent = location;
+        document.getElementById("table2").style.display = "initial";
+
+    }
+
+
+
+
+
+
+
+}
+function book(){
+    document.getElementById("appoint").style.display = "initial";
 
 
 }

@@ -13,14 +13,14 @@
 <body>
 <div class="container" id="checklist">
     <div class="row">
-        <div class="col" id="col1">
+        <div class="col-xxl-3" id="col1">
 
         </div>
-        <div class="col" >
+        <div class="col-xxl-6" >
             <h3 class="heading">Check your Covid Symptoms.</h3>
             <form id="form" class="checkform" onsubmit="symptomCheck(); return false;">
 
-                <table class="table">
+                <table class="table" id="table1">
                     <thead>
 
 
@@ -207,18 +207,72 @@
 
             </form>
             <p id="result"></p>
-            <a href="checklist.html" style="text-decoration: none">
-                <button type="submit" class="btn btn-outline-light" id="proceed2">Refill form</button>
-            </a>
+            <button class="btn btn-outline-light" id="proceed2" onclick="book()">Book Covid Test</button>
+
+
 
 
 
         </div>
-        <div class="col" id="col2">
+        <div class="col-xxl-3" id="col2">
 
         </div>
     </div>
-    <div class="container">
+    <div class="container" style="margin-bottom: 30px" id="appoint">
+        <div class="row">
+            <div class="col-xxl-6" style="background-color: white; height: auto">
+                <form onsubmit="showResults(); return false">
+                <div class="mb-3">
+                    <label class="form-label" style="margin-top: 20px">Enter your details below.</label>
+                    <input id="name" type="name" class="form-control"  placeholder="Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="number" placeholder="Phone No" required>
+                </div>
+                <select id="location" class="form-select" aria-label="Default select example" style="height: 50px">
+                    <option value="0" selected>Pick a hospital within Nairobi</option>
+                    <option value="Kenyatta Hospital(Free Testing)">Kenyatta Hospital(Free Testing)</option>
+                    <option value="Coptic Hospital(6,000 Khshs)">Coptic Hospital(6,000 Khshs)</option>
+                    <option value="Nairobi Hospital(6,000 Kshs)">Nairobi Hospital(6,000 Kshs)</option>
+                    <option value="Matter Misercodiae Hospital(6,000 Kshs)">Matter Misercodiae Hospital(6,000 Kshs)</option>
+                </select><br>
+                    
+                <button type="submit" class="btn btn-outline-dark" id="proceed3">Proceed</button>
+
+
+                </form>
+
+
+            </div>
+
+            <div class="col-xxl-6" style="background-color: white">
+                <table class="table" id="table2" style="border-color: white">
+                    <thead>
+                    <h4 id="h3">Appointment Details</h4>
+
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Name</td>
+                        <td id="results"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Phone No</td>
+                        <td id="results2"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Hospital</td>
+                        <td id="results3"></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
 
     </div>
 
@@ -229,6 +283,8 @@
 
 
 <div class="container" id="divresult">
+
+
 
 
 </div>
