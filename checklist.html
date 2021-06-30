@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/checklist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Check symptoms</title>
+</head>
+<body>
+    <div class="container" id="checklist">
+        <div class="row">
+            <div class="col" id="col1">
+
+            </div>
+            <div class="col" >
+                <h3 class="heading">Check your Covid Symptoms.</h3>
+                <form id="form" class="checkform" onsubmit="symptomCheck(); return false;">
+
+                    <table class="table">
+                        <thead>
+
+
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Fever 100.4°F/ 38°C or higher.</td>
+                            <td>
+                                <select id="sym1" >
+                                    <option value="0" selected>Choose</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Cough</td>
+                            <td>
+                                <select id="sym2" >
+                                    <option value="0" selected>Choose</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Breath shortness/ Difficulty breathing</td>
+                            <td>
+                                <select id="sym3" >
+                                    <option value="0" selected>Choose</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Chills</td>
+                            <td>
+                                <select id="sym4" >
+                                    <option value="0" selected>Choose</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Fatigue</td>
+                            <td>
+                                <select id="sym5" >
+                                    <option value="0" selected>Choose</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Muscle pains or Body Aches</td>
+                            <td>
+                                <select id="sym6" >
+                                    <option value="0" selected>Choose</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Headaches</td>
+                            <td>
+                                <select id="sym7" >
+                                    <option value="0" selected>Choose</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"></th>
+                            <td>New Loss of Taste or Smell</td>
+                            <td>
+                                <select id="sym8" >
+                                    <option value="0" selected>Choose</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Sore Throat</td>
+                            <td>
+                                <select id="sym9" >
+                                    <option value="0" selected>Choose</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Congestion or Runny Nose</td>
+                            <td>
+                                <select id="sym10" >
+                                    <option value="0" selected>Choose</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Nausea or Vommiting</td>
+                            <td>
+                                <select id="sym11" >
+                                    <option value="0" selected>Choose</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Diarrhoea</td>
+                            <td>
+                                <select id="sym12" >
+                                    <option value="0" selected>Choose</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Other signs of new Illness</td>
+                            <td>
+                                <select id="sym13" >
+                                    <option value="0" selected>Choose</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+
+                            </td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+
+                    <button type="submit" class="btn btn-outline-light" id="proceed">Proceed</button>
+
+
+
+                </form>
+                <p id="result"></p>
+                <a href="checklist.html" style="text-decoration: none">
+                <button type="submit" class="btn btn-outline-light" id="proceed2">Refill form</button>
+                </a>
+
+
+
+            </div>
+            <div class="col" id="col2">
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="container" id="divresult">
+
+
+    </div>
+
+
+
+<script src="js/checklist.js"></script>
+
+</body>
+</html>
