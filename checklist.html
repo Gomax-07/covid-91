@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/checklist.css">
@@ -8,97 +9,98 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Check symptoms</title>
 </head>
+
 <body>
-<div class="checklist">
-<h2 style="color: white">Check your Covid Symptoms.</h2>
+    <div class="checklist">
+        <h2 style="color: white">Check your Covid Symptoms.</h2>
 
-<form class="checkform" onsubmit="symptomCheck(); return false;">
+        <form class="checkform" onsubmit="symptomCheck(); return false;">
 
-    <label class="label1" >Fever 100.4°F/ 38°C or higher.
+            <label class="label1">Fever 100.4°F/ 38°C or higher.
     <select id="sym1" >
         <option value="0" selected>Choose</option>
         <option value="Yes">Yes</option>
         <option value="No">No</option>
     </select>
     </label><br>
-    <label class="label2" >Cough
+            <label class="label2">Cough
         <select id="sym2">
             <option value="0" selected>Choose</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
     </label><br>
-    <label class="label3" >Shortness of breath or Difficulty Breathing.
+            <label class="label3">Shortness of breath or Difficulty Breathing.
         <select id="sym3">
             <option value="0" selected>Choose</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
     </label><br>
-    <label class="label4" >Chills.
+            <label class="label4">Chills.
         <select id="sym4">
             <option value="0" selected>Choose</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
     </label><br>
-    <label class="label5" >Fatigue.
+            <label class="label5">Fatigue.
         <select id="sym5">
             <option value="0" selected>Choose</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
     </label><br>
-    <label class="label6" >Muscle Pain or Body Aches.
+            <label class="label6">Muscle Pain or Body Aches.
         <select id="sym6">
             <option value="0" selected>Choose</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
     </label><br>
-    <label class="label7" >Headache.
+            <label class="label7">Headache.
         <select id="sym7">
             <option value="0" selected>Choose</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
     </label><br>
-    <label class="label8" >New Loss of Taste or Smell.
+            <label class="label8">New Loss of Taste or Smell.
         <select id="sym8">
             <option value="0" selected>Choose</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
     </label><br>
-    <label class="label9" >Sore Throat.
+            <label class="label9">Sore Throat.
         <select id="sym9">
             <option value="0" selected>Choose</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
     </label><br>
-    <label class="label10" >Congestion or Runny nose.
+            <label class="label10">Congestion or Runny nose.
         <select id="sym10">
             <option value="0" selected>Choose</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
     </label><br>
-    <label class="label11" >Nausea or Vomiting.
+            <label class="label11">Nausea or Vomiting.
         <select id="sym11">
             <option value="0" selected>Choose</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
     </label><br>
-    <label class="label12" >Diarrhoea.
+            <label class="label12">Diarrhoea.
         <select id="sym12">
             <option value="0" selected>Choose</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
     </label><br>
-    <label class="label13" >Other signs of new Illness
+            <label class="label13">Other signs of new Illness
         <select id="sym13">
             <option value="0" selected>Choose</option>
             <option value="Yes">Yes</option>
@@ -107,23 +109,24 @@
     </label><br>
 
 
-    <button type="submit" id="proceed">Proceed</button>
+            <button type="submit" id="proceed">Proceed</button>
 
 
-</form>
-    <div  id="divresult">
-        <p id="result"></p>
-        <p id="result2"></p>
-        <p id="result3"></p>
+        </form>
+        <div id="divresult">
+            <p id="result"></p>
+            <p id="result2"></p>
+            <p id="result3"></p>
+
+        </div>
+
+
+
 
     </div>
 
-
-
-
-</div>
-
-<script src="js/checklist.js"></script>
+    <script src="js/checklist.js"></script>
 
 </body>
+
 </html>

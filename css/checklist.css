@@ -1,120 +1,120 @@
-.checkform{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #243665;
 }
-.checklist{
-    margin-left:40px;
-    color:#8bd8bd ;
+
+.checklist {
+    margin-left: 40px;
+    color: #8bd8bd;
 }
-form{
+
+form {
     font-family: 'Open Sans', sans-serif;
     line-height: 25px;
 }
-#sym1{
+
+#sym1 {
     margin-left: 96px;
     margin-bottom: 3px;
 }
-#sym2{
+
+#sym2 {
     margin-left: 271px;
     margin-bottom: 3px;
-
 }
-#sym3{
+
+#sym3 {
     margin-bottom: 3px;
-
 }
-#sym4{
+
+#sym4 {
     margin-left: 275px;
     margin-bottom: 3px;
-
 }
-#sym5{
+
+#sym5 {
     margin-left: 260px;
     margin-bottom: 3px;
-
 }
-#sym6{
+
+#sym6 {
     margin-left: 114px;
     margin-bottom: 3px;
-
 }
-#sym7{
+
+#sym7 {
     margin-left: 239px;
     margin-bottom: 3px;
-
 }
-#sym8{
+
+#sym8 {
     margin-left: 114px;
     margin-bottom: 3px;
-
 }
-#sym9{
+
+#sym9 {
     margin-left: 226px;
     margin-bottom: 3px;
-
 }
-#sym10{
+
+#sym10 {
     margin-left: 117px;
     margin-bottom: 3px;
-
 }
-#sym11{
+
+#sym11 {
     margin-left: 166px;
     margin-bottom: 3px;
-
 }
-#sym12{
+
+#sym12 {
     margin-left: 238px;
     margin-bottom: 3px;
-
 }
-#sym13{
+
+#sym13 {
     margin-left: 126px;
     margin-bottom: 3px;
-
 }
-#proceed{
+
+#proceed {
     margin-top: 30px;
     height: 40px;
     width: 130px;
-
     font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
     border: none;
 }
-#divresult{
+
+#divresult {
     line-height: 4px;
     color: white;
 }
 
-select{
-
+select {
     border-width: 2px;
     border-color: white;
     height: 30px;
     width: 80px;
 }
-body{
-    font-family: 'Open Sans', sans-serif;
 
+body {
+    font-family: 'Open Sans', sans-serif;
 }
+
 
 /* Media Queries */
 
 @media (min-width: 720px) {
-    .checklist{
+    .checklist {
         margin-left: 37%;
     }
-    #proceed{
+    #proceed {
         width: 130px;
     }
-
-
-
 }
-
-
-
-
-
