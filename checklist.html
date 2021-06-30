@@ -201,13 +201,13 @@
                     </tbody>
                 </table>
 
-                <button type="submit" class="btn btn-outline-light" id="proceed">Proceed</button>
+                <button type="submit" class="btn btn-outline-dark" id="proceed">Proceed</button>
 
 
 
             </form>
             <p id="result"></p>
-            <button class="btn btn-outline-light" id="proceed2" onclick="book()">Book Covid Test</button>
+            <button class="btn btn-outline-dark" id="proceed2" onclick="book()">Book Covid Test</button>
 
 
 
@@ -231,13 +231,15 @@
                 </div>
                 <select id="location" class="form-select" aria-label="Default select example" style="height: 50px">
                     <option value="0" selected>Pick a hospital within Nairobi</option>
-                    <option value="Kenyatta Hospital(Free Testing)">Kenyatta Hospital(Free Testing)</option>
-                    <option value="Coptic Hospital(6,000 Khshs)">Coptic Hospital(6,000 Khshs)</option>
-                    <option value="Nairobi Hospital(6,000 Kshs)">Nairobi Hospital(6,000 Kshs)</option>
-                    <option value="Matter Misercodiae Hospital(6,000 Kshs)">Matter Misercodiae Hospital(6,000 Kshs)</option>
+                    <option value="Kenyatta Hospital (Free Testing)">Kenyatta Hospital(Free Testing)</option>
+                    <option value="Coptic Hospital (6,000 Khshs)">Coptic Hospital(6,000 Khshs)</option>
+                    <option value="Nairobi Hospital (12,000 Kshs)">Nairobi Hospital(12,000 Kshs)</option>
+                    <option value="Matter Misercodiae Hospital (3,000 Kshs)">Matter Misercodiae Hospital (3,000 Kshs)</option>
+                    <option value="Aga Khan University Hospital (7,000 Kshs)">Aga Khan University Hospital (7,000 Kshs)</option>
+
                 </select><br>
-                    
-                <button type="submit" class="btn btn-outline-dark" id="proceed3">Proceed</button>
+
+                <button type="submit" class="btn btn-outline-dark" id="proceed3">Book Now</button>
 
 
                 </form>
@@ -245,7 +247,9 @@
 
             </div>
 
-            <div class="col-xxl-6" style="background-color: white">
+
+
+            <div class="col-xxl-6" style="background-color: white" id="receipt">
                 <table class="table" id="table2" style="border-color: white">
                     <thead>
                     <h4 id="h3">Appointment Details</h4>
@@ -254,24 +258,26 @@
                     <tbody>
                     <tr>
                         <th scope="row"></th>
-                        <td>Name</td>
+                        <td><b>Name</b></td>
                         <td id="results"></td>
                     </tr>
                     <tr>
                         <th scope="row"></th>
-                        <td>Phone No</td>
+                        <td><b>Phone No</b></td>
                         <td id="results2"></td>
                     </tr>
                     <tr>
                         <th scope="row"></th>
-                        <td>Hospital</td>
+                        <td><b>Hospital</b></td>
                         <td id="results3"></td>
                     </tr>
                     </tbody>
-                </table>
+                </table><br>
+
 
 
             </div>
+
         </div>
 
     </div>
