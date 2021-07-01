@@ -67,6 +67,7 @@ function showResults() {
         document.getElementById('results2').textContent = number;
         document.getElementById('results3').textContent = location;
         document.getElementById("table2").style.display = "initial";
+        alert("Hi " + name + ". Your COVID 19 Test has been successfully booked at " + location + ". We will reach you shortly on " + number + " to confirm the date and time for your COVID 19 test.")
 
     }
 
