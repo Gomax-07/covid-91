@@ -3,128 +3,361 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/checklist.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-91</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Check symptoms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <div class="checklist">
-        <h2 style="color: white">Check your Covid Symptoms.</h2>
+    <nav>
+        <div class="logo">
+            <h4>Covid -91</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="checklist.html">Test</a></li>
+            <li><a href="https://us6.list-manage.com/contact-form?u=ef2edeba0fd26298e06ab368e&form_id=106c4197048a40bfa2f2d5d2c3a1dabd">Contact</a></li>
+        </ul>
+        <div class="next">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
 
-        <form class="checkform" onsubmit="symptomCheck(); return false;">
+    <div class="container" id="checklist">
+        <div class="row">
+            <div class="col-xxl-3" id="col1">
 
-            <label class="label1">Fever 100.4°F/ 38°C or higher.
-    <select id="sym1" >
-        <option value="0" selected>Choose</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-    </select>
-    </label><br>
-            <label class="label2">Cough
-        <select id="sym2">
-            <option value="0" selected>Choose</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select>
-    </label><br>
-            <label class="label3">Shortness of breath or Difficulty Breathing.
-        <select id="sym3">
-            <option value="0" selected>Choose</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select>
-    </label><br>
-            <label class="label4">Chills.
-        <select id="sym4">
-            <option value="0" selected>Choose</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select>
-    </label><br>
-            <label class="label5">Fatigue.
-        <select id="sym5">
-            <option value="0" selected>Choose</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select>
-    </label><br>
-            <label class="label6">Muscle Pain or Body Aches.
-        <select id="sym6">
-            <option value="0" selected>Choose</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select>
-    </label><br>
-            <label class="label7">Headache.
-        <select id="sym7">
-            <option value="0" selected>Choose</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select>
-    </label><br>
-            <label class="label8">New Loss of Taste or Smell.
-        <select id="sym8">
-            <option value="0" selected>Choose</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select>
-    </label><br>
-            <label class="label9">Sore Throat.
-        <select id="sym9">
-            <option value="0" selected>Choose</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select>
-    </label><br>
-            <label class="label10">Congestion or Runny nose.
-        <select id="sym10">
-            <option value="0" selected>Choose</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select>
-    </label><br>
-            <label class="label11">Nausea or Vomiting.
-        <select id="sym11">
-            <option value="0" selected>Choose</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select>
-    </label><br>
-            <label class="label12">Diarrhoea.
-        <select id="sym12">
-            <option value="0" selected>Choose</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select>
-    </label><br>
-            <label class="label13">Other signs of new Illness
-        <select id="sym13">
-            <option value="0" selected>Choose</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select>
-    </label><br>
+            </div>
+            <div class="col-xxl-6">
+                <h3 class="heading">Check your Covid Symptoms.</h3>
+                <form id="form" class="checkform" onsubmit="symptomCheck(); return false;">
+
+                    <table class="table" id="table1">
+                        <thead>
 
 
-            <button type="submit" id="proceed">Proceed</button>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Fever 100.4°F/ 38°C or higher.</td>
+                                <td>
+                                    <select id="sym1">
+                                  <option value="0" selected>Choose</option>
+                                  <option value="Yes">Yes</option>
+                                  <option value="No">No</option>
+                              </select>
+                                </td>
+                            </tr>
 
 
-        </form>
-        <div id="divresult">
-            <p id="result"></p>
-            <p id="result2"></p>
-            <p id="result3"></p>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Cough</td>
+                                <td>
+                                    <select id="sym2">
+                                  <option value="0" selected>Choose</option>
+                                  <option value="Yes">Yes</option>
+                                  <option value="No">No</option>
+                              </select>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Breath shortness/ Difficulty breathing</td>
+                                <td>
+                                    <select id="sym3">
+                                  <option value="0" selected>Choose</option>
+                                  <option value="Yes">Yes</option>
+                                  <option value="No">No</option>
+                              </select>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Chills</td>
+                                <td>
+                                    <select id="sym4">
+                                  <option value="0" selected>Choose</option>
+                                  <option value="Yes">Yes</option>
+                                  <option value="No">No</option>
+                              </select>
+
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Fatigue</td>
+                                <td>
+                                    <select id="sym5">
+                                  <option value="0" selected>Choose</option>
+                                  <option value="Yes">Yes</option>
+                                  <option value="No">No</option>
+                              </select>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Muscle pains or Body Aches</td>
+                                <td>
+                                    <select id="sym6">
+                                  <option value="0" selected>Choose</option>
+                                  <option value="Yes">Yes</option>
+                                  <option value="No">No</option>
+                              </select>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Headaches</td>
+                                <td>
+                                    <select id="sym7">
+                                  <option value="0" selected>Choose</option>
+                                  <option value="Yes">Yes</option>
+                                  <option value="No">No</option>
+                              </select>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"></th>
+                                <td>New Loss of Taste or Smell</td>
+                                <td>
+                                    <select id="sym8">
+                                  <option value="0" selected>Choose</option>
+                                  <option value="Yes">Yes</option>
+                                  <option value="No">No</option>
+                              </select>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Sore Throat</td>
+                                <td>
+                                    <select id="sym9">
+                                  <option value="0" selected>Choose</option>
+                                  <option value="Yes">Yes</option>
+                                  <option value="No">No</option>
+                              </select>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Congestion or Runny Nose</td>
+                                <td>
+                                    <select id="sym10">
+                                  <option value="0" selected>Choose</option>
+                                  <option value="Yes">Yes</option>
+                                  <option value="No">No</option>
+                              </select>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Nausea or Vommiting</td>
+                                <td>
+                                    <select id="sym11">
+                                  <option value="0" selected>Choose</option>
+                                  <option value="Yes">Yes</option>
+                                  <option value="No">No</option>
+                              </select>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Diarrhoea</td>
+                                <td>
+                                    <select id="sym12">
+                                  <option value="0" selected>Choose</option>
+                                  <option value="Yes">Yes</option>
+                                  <option value="No">No</option>
+                              </select>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Other signs of new Illness</td>
+                                <td>
+                                    <select id="sym13">
+                                  <option value="0" selected>Choose</option>
+                                  <option value="Yes">Yes</option>
+                                  <option value="No">No</option>
+                              </select>
+
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                    <button type="submit" class="btn btn-outline-dark" id="proceed">Proceed</button>
+
+
+
+                </form>
+                <p id="result"></p>
+                <button class="btn btn-outline-dark" id="proceed2" onclick="book()">Book Covid Test</button>
+
+
+
+
+
+            </div>
+            <div class="col-xxl-3" id="col2">
+
+            </div>
+        </div>
+        <div class="container" style="margin-bottom: 30px" id="appoint">
+            <div class="row">
+                <div class="col-xxl-6" style="background-color: white; height: auto">
+                    <form onsubmit="showResults(); return false">
+                        <div class="mb-3">
+                            <label class="form-label" style="margin-top: 20px">Enter your details below.</label>
+                            <input id="name" type="name" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="number" placeholder="Phone No" required>
+                        </div>
+                        <select id="location" class="form-select" aria-label="Default select example" style="height: 50px">
+                      <option value="0" selected>Pick a hospital within Nairobi</option>
+                      <option value="Kenyatta Hospital (Free Testing)">Kenyatta Hospital(Free Testing)</option>
+                      <option value="Coptic Hospital (6,000 Khshs)">Coptic Hospital(6,000 Khshs)</option>
+                      <option value="Nairobi Hospital (12,000 Kshs)">Nairobi Hospital(12,000 Kshs)</option>
+                      <option value="Matter Misercodiae Hospital (3,000 Kshs)">Matter Misercodiae Hospital (3,000 Kshs)</option>
+                      <option value="Aga Khan University Hospital (7,000 Kshs)">Aga Khan University Hospital (7,000 Kshs)</option>
+  
+                  </select><br>
+
+                        <button type="submit" class="btn btn-outline-dark" id="proceed3">Book Now</button>
+
+
+                    </form>
+
+
+                </div>
+
+
+
+                <div class="col-xxl-6" style="background-color: white" id="receipt">
+                    <table class="table" id="table2" style="border-color: white">
+                        <thead>
+                            <h4 id="h3">Appointment Details</h4>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td><b>Name</b></td>
+                                <td id="results"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td><b>Phone No</b></td>
+                                <td id="results2"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td><b>Hospital</b></td>
+                                <td id="results3"></td>
+                            </tr>
+                        </tbody>
+                    </table><br>
+
+
+
+                </div>
+
+            </div>
 
         </div>
 
 
 
-
     </div>
+    <footer class="foot" id="contact1">
+        <br><h1>Contact us</h1>
+        <div class="line-height">
+            <div class="row one">
+                <div class="col-md-2 two">
+                    <h2>Location</h2>
+                    <p>COVID-91</p>
+                    <p>GreenHouse | Ngong</p>
+                    <p>00453,Ngong </p>
+                </div>
+                <div class="col-md-2 four">
+                    <h2>Social</h2>
+                    <ul>
+                        <i class="fab fa-facebook">  Facebook</i>
+                        <br>
+                        <i class="fab fa-twitter">  Twitter</i>
+                        <br>
+                        <i class="fab fa-instagram">  Instagram</i>
+                    </ul>
+                </div>
+                <div class="col-md-2 three">
+                    <h2>Customer Care</h2>
+                    <p>info@covid.91.org</p>
 
+                    <a style="color: white; text-decoration: none" href="https://us6.list-manage.com/contact-form?u=ef2edeba0fd26298e06ab368e&form_id=106c4197048a40bfa2f2d5d2c3a1dabd">
+
+                        <p><i class="fas fa-phone-alt"></i>Click to email us:</p>
+                    </a>
+                    <p>Phone: +254774811916</p>
+                </div>
+                <div class="row">
+                    <div class="container footer">
+                        <p>&copy; 2021 | COVID-91</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="js/app.js"></script>
     <script src="js/checklist.js"></script>
 
 </body>
