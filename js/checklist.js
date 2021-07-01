@@ -48,6 +48,7 @@ function symptomCheck() {
 
 
 
+
     }
 
 
@@ -71,6 +72,7 @@ function showResults() {
     }
 
 
+}
 
 
 
@@ -82,4 +84,8 @@ function book() {
     document.getElementById("appoint").style.display = "initial";
 
 
+<<<<<<< HEAD
 }
+=======
+
+>>>>>>> acd656e5252dda0ede87db43825fbd4f17ccb91d
