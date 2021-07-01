@@ -81,3 +81,6 @@ function showResults() {
 
 function book() {
     document.getElementById("appoint").style.display = "initial";
+
+
+}
