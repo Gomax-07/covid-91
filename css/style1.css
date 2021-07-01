@@ -1,8 +1,10 @@
                 * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: 'Raleway', sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: 'Raleway', sans-serif;
+                }
+                
                 nav {
                     display: flex;
                     justify-content: space-around;
@@ -10,23 +12,28 @@
                     min-height: 16vh;
                     background-color: #243665;
                 }
+                
                 #aboutcovid {
                     margin-top: 70px;
                 }
+                
                 .logo {
                     color: rgb(10, 132, 153);
                     text-transform: uppercase;
                     letter-spacing: 5px;
                     font-size: 20px;
                 }
+                
                 .nav-links {
                     display: flex;
                     width: 38%;
                     justify-content: space-around;
                 }
+                
                 .nav-links li {
                     list-style: none;
                 }
+                
                 .nav-links a {
                     color: rgb(10, 132, 153);
                     text-decoration-line: none;
@@ -34,30 +41,36 @@
                     font-weight: bold;
                     font-size: 16px;
                 }
+                
                 .nav-links a:active {
                     background-color: aqua;
                 }
+                
                 .nav-links a:hover {
                     background-color: aqua;
                     color: black;
                     border-radius: 15px;
                     padding: 18px;
                 }
+                
                 .next {
                     display: none;
                     cursor: pointer;
                 }
+                
                 .next div {
                     width: 25px;
                     height: 3px;
                     background-color: rgb(10, 132, 153);
                     margin: 5px;
                 }
+                
                 @media screen and (max-width:1024px) {
                     .nav-links {
                         width: 60%;
                     }
                 }
+                
                 @media screen and (max-width:770px) {
                     body {
                         overflow-x: hidden;
@@ -89,9 +102,11 @@
                         display: block;
                     }
                 }
+                
                 .nav:active {
                     transform: translateX(0);
                 }
+                
                 @keyframes navlinkFade {
                     from {
                         opacity: 0;
@@ -102,46 +117,57 @@
                         transform: translateX(0px);
                     }
                 }
+                
                 select {
                     border-width: 2px;
                     border-color: #243666;
                     height: 30px;
                     width: 80px;
                 }
+                
                 body {
                     font-family: 'Open Sans', sans-serif;
                     background-color: white !important;
                 }
+                
                 td {
                     color: #243666 !important;
                 }
+                
                 #appoint {
                     display: none;
                 }
+                
                 #h3 {
                     margin-left: 50px;
                     margin-top: 10px;
                 }
+                
                 #table1 {
                     border-color: white !important;
                 }
+                
                 #table2 {
                     border-color: white !important;
                     display: none;
                 }
+                
                 #table2 td {
                     color: #243666 !important;
                 }
+                
                 #proceed {
                     width: 50%;
                     height: 45px;
                     margin-left: 20px;
                     border-width: 2px !important;
                 }
+                
                 #btnPrint {
                     margin-left: 2px;
                     margin-top: 10px;
                 }
+                
                 #proceed2 {
                     width: 40%;
                     height: 45px;
@@ -150,38 +176,45 @@
                     margin-bottom: 30px;
                     border-width: 2px !important;
                 }
+                
                 #proceed3 {
                     margin-bottom: 30px;
                     border-width: 2px !important;
                 }
+                
                 #result {
                     color: #243666;
                     margin-top: 30px;
                     margin-left: 20px;
                 }
+                
                 .heading {
                     margin-left: 22px;
                     color: #243666;
                     margin-top: 20px;
                     margin-bottom: 20px;
                 }
+                
                 #content2 {
                     background-color: #243666 !important;
                     color: white;
                 }
                 /* Media Queries */
+                
                 @media (max-width: 720px) {
                     #col1,
                     #col2 {
                         display: none;
                     }
                 }
+                
                 @media (max-width: 900px) {
                     #col1,
                     #col2 {
                         display: none;
                     }
                 }
+                
                 @media (max-width: 1000px) {
                     #col1,
                     #col2 {
