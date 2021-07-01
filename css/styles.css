@@ -1,0 +1,52 @@
+.foot h1 {
+    color: white;
+    padding-left: 40%;
+}
+.foot {
+   background-color: #243666;
+}
+
+.foot .line-height {
+    padding-top: 3%;
+}
+
+.one {
+    padding-left: 20%;
+}
+
+.three {
+    padding-left: 15%;
+}
+
+.four {
+    padding-left: 5%;
+}
+
+.foot .col-md-2 {
+   color: white;
+  
+}
+
+.foot .footer {
+   color: white;
+   padding-left: 25%;
+}
+
+.foot .five {
+    float: right;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+.footerbtn {
+    border-radius: 10%;
+    background:  crimson;
+    width: 80%;
+    height: 20%;
+    font-size: 150%;
+}
+
+.footerbtn:hover {
+    background-color: crimson;
+    color: white;
+}
