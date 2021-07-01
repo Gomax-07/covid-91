@@ -50,6 +50,7 @@ function symptomCheck(){
 
 
 
+
     }
 
 
@@ -74,6 +75,7 @@ function showResults(){
     }
 
 
+}
 
 
 
@@ -85,6 +87,7 @@ function book(){
 
 
 }
+
 
 
 

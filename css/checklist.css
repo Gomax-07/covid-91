@@ -1,7 +1,10 @@
 select{
 
     border-width: 2px;
+
     border-color: #243666;
+    border-color: white;
+
     height: 30px;
     width: 80px;
 }
@@ -77,6 +80,48 @@ td{
     margin-bottom: 20px;
 }
 
+    background-color: #243666 !important;
+
+}
+td{
+    color: #8cd8ba !important;
+
+
+}
+table{
+    border-color: #243666 !important;
+}
+#proceed{
+    width: 50%;
+    height: 45px;
+    margin-left: 20px;
+}
+#proceed2{
+    width: 50%;
+    height: 45px;
+    margin-left: 20px;
+    display: none;
+}
+#result{
+    color: white;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+
+
+
+#checklist{
+
+}
+.heading{
+    margin-left: 22px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
 /* Media Queries */
 
@@ -94,7 +139,23 @@ td{
     #col1, #col2{
         display: none;
 
+@media (max-width: 720px) {
+    #col1, #col2{
+        display: none;
+
+=======
     }
+
+
+
+
+}
+@media (max-width: 900px) {
+    #col1, #col2{
+        display: none;
+
+    }
+
 
 
 
