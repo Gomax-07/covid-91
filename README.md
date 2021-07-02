@@ -51,7 +51,7 @@ The form on the web allows the user to click into the any navigation button to s
             
 ## LIVE SETUP
 
-View [LIVE]
+View [LIVE]:https://docs.google.com/presentation/d/13Hgge7eiltqAe9IExiwxKqrc5CRfzAGaxFkyhWPX56o/edit#slide=id.ge3470244de_0_357
 
 ## LICENSE.
 
