@@ -84,7 +84,7 @@
                     padding: 20%;
                 }
                 .nav-links {
-                    position: relative;
+                    position: absolute;
                     right: 8px;
                     height: 92vh;
                     top: 8vh;
