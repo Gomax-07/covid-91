@@ -9,7 +9,7 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                min-height: 16v;
+                min-height: 16vh;
                 background-color: #243665;
             }
             #aboutcovid{
