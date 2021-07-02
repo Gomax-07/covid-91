@@ -90,7 +90,7 @@
                     top: 8vh;
                     background-color: black;
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: column-reverse;
                     align-items: center;
                     width: 30%;
                     transform: translateX(110%);
